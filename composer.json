@@ -1,4 +1,14 @@
 {
+    "name": "kazkoks/pavadinimas",
+    "description": "description",
+    "type": "project",
+    "autoload": {
+        "files": [
+            "src/Soft.php",
+            "src/Strict.php",
+            "src/NotTyped.php"
+        ]
+    },
     "require": {
 	"kevinlebrun/colors.php": "1.0.*"
     }

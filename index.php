@@ -1,8 +1,5 @@
-<?php
+<?php 
 require_once __DIR__ . '/vendor/autoload.php';
-require 'src/Strict.php';
-require 'src/NotTyped.php';
-require 'src/Soft.php';
 use function src\Soft\calculatedHomeWorkSum as Soft;
 use function src\Strict\calculatedHomeWorkSum as Strict;
 use function src\NotTyped\calculatedHomeWorkSum as NotTyped;
@@ -40,7 +37,7 @@ try{
 }
 catch(\Throwable $exp)
 {
-    echo("Error! Try again later").PHP_EOL;
+    echo($exp).PHP_EOL;
 } 
 try{    
     echo $c("src\Strict\calculatedHomeWorkSum: ".Strict(3,2.2,'1'))->bold()->red().PHP_EOL;

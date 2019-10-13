@@ -6,4 +6,9 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Colors\\Color' => $vendorDir . '/kevinlebrun/colors.php/src/Colors/Color.php',
+    'Colors\\Exception' => $vendorDir . '/kevinlebrun/colors.php/src/Colors/Exception.php',
+    'Colors\\InvalidStyleNameException' => $vendorDir . '/kevinlebrun/colors.php/src/Colors/InvalidStyleNameException.php',
+    'Colors\\NoStyleFoundException' => $vendorDir . '/kevinlebrun/colors.php/src/Colors/NoStyleFoundException.php',
+    'Colors\\RecursionInUserStylesException' => $vendorDir . '/kevinlebrun/colors.php/src/Colors/RecursionInUserStylesException.php',
 );
