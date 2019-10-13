@@ -4,19 +4,12 @@ namespace src\NotTyped;
 
 function calculatedHomeWorkSum(...$numbers): int
 {
-    try{
-        $sum = 0;
-        foreach($numbers as $number)
-        {
-            $sum +=$number;
-        }
-        return $sum;  
-    }
-    catch(\Throwable $exp)
+    $sum = 0;
+    foreach($numbers as $number)
     {
-        echo("Error! Try again later");
+        $sum +=$number;
     }
-
+    return $sum;
 }
 
 
